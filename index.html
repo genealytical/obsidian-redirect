@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><script>
+  const params = new URLSearchParams(window.location.search);
+  const vault = params.get('vault');
+  const file = params.get('file');
+  window.location.href = `obsidian://open?vault=${vault}&file=${file}`;
+</script></head>
+<body>Apertura in Obsidian...</body>
+</html>
